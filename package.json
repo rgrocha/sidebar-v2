@@ -17,7 +17,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/turbo87/sidebar-v2.git"
-  },,
+  },
   "dependencies": {
     "leaflet": "^0.7.3"
   },
