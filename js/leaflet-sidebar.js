@@ -1,3 +1,5 @@
+var L = require('leaflet'):
+
 L.Control.Sidebar = L.Control.extend({
     includes: L.Mixin.Events,
 
@@ -133,3 +135,8 @@ L.Control.Sidebar = L.Control.extend({
 L.control.sidebar = function (sidebar, options) {
     return new L.Control.Sidebar(sidebar, options);
 };
+
+
+// define Leaflet for Node module pattern loaders, including Browserify
+if (typeof module === 'object' && typeof module.exports === 'object') {
+    module.exports = L;
