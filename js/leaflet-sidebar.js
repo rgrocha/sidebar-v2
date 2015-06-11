@@ -1,4 +1,4 @@
-var L = require('leaflet'):
+var L = require('leaflet');
 
 L.Control.Sidebar = L.Control.extend({
     includes: L.Mixin.Events,
